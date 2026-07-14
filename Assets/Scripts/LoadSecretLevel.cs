@@ -2,26 +2,30 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelChange : MonoBehaviour
+public class LoadSecretLevel : MonoBehaviour
 {
     [SerializeField] float levelLoaddelay = 2f;
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Player"))
-        {
-            return;
-        }
-        StartCoroutine(LoadNextLevel());
-
+        StartCoroutine(LoadSecretLvl());
     }
-    IEnumerator LoadNextLevel()
+
+  IEnumerator LoadSecretLvl()
     {
         yield return new WaitForSecondsRealtime(levelLoaddelay);
         int currSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextSceneIndex = currSceneIndex + 1;
-        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
+        int nextSceneIndex;
+        if (currSceneIndex == 3)
         {
-            nextSceneIndex = 0;
+            nextSceneIndex = 6;
+        }
+        else if (currSceneIndex == 6)
+        {
+            nextSceneIndex = 3;
+        }
+        else
+        {
+            yield break;
         }
         FindFirstObjectByType<ScenePersists>().ResetScenePersists();
         SceneManager.LoadScene(nextSceneIndex);
