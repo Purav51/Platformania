@@ -14,27 +14,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1615066173676636055, guid: d74128908f442d14f937a55bf8d91569, type: 3}
       propertyPath: m_Color.g
-      value: 0.440635
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1615066173676636055, guid: d74128908f442d14f937a55bf8d91569, type: 3}
       propertyPath: m_Color.r
-      value: 0.3050313
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6900555961677881172, guid: d74128908f442d14f937a55bf8d91569, type: 3}
       propertyPath: MoveSpeed
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7080725624228917509, guid: d74128908f442d14f937a55bf8d91569, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7080725624228917509, guid: d74128908f442d14f937a55bf8d91569, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7080725624228917509, guid: d74128908f442d14f937a55bf8d91569, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7080725624228917509, guid: d74128908f442d14f937a55bf8d91569, type: 3}
       propertyPath: m_LocalPosition.x
@@ -78,7 +78,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8739788886441461858, guid: d74128908f442d14f937a55bf8d91569, type: 3}
       propertyPath: m_Name
-      value: BossGoober
+      value: SuperFastGoober
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
