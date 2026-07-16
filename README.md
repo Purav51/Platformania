@@ -12,7 +12,7 @@ Features:
 - Main menu and startup screen
 - Final score summary showing maximum achievable score
 - Enemy combat using projectile attacks
-- additional feature planned: new enemy type, secret level inspired from path of pain (Hollow knight)
+- new added feature: new enemy type, secret level with new type of collectable coin. 
 
 Technologies:
 - Unity 6000.3.9f1
